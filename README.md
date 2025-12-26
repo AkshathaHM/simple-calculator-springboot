@@ -1,2 +1,21 @@
-# simple-calculator-springboot
-A simple and responsive calculator web application built using Spring Boot, Spring MVC, and Thymeleaf. The application supports basic arithmetic operations with proper error handling and a modern UI design, making it ideal for beginners learning Java web development.
+Simple Calculator
+
+This is a simple calculator web application built using Spring Boot.
+It performs basic arithmetic operations.
+
+Features:
+Addition
+Subtraction
+Multiplication
+Division
+
+Technologies Used:
+Java
+Spring Boot
+HTML
+CSS
+
+How to Run:
+Open the project in an IDE
+Run CalculatorApplication.jav
+Open browser and go to http://localhost:9090/
