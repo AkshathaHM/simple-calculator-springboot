@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+		
+		    * {
+		        box-sizing: border-box;
+		    }
+
+		    body {
+		        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		        background: linear-gradient(135deg, #667eea, #764ba2);
+		        min-height: 100vh;
+		        margin: 0;
+		        display: flex;
+		        flex-direction: column;   /* IMPORTANT */
+		        align-items: center;
+		        padding-top: 40px;        /* Space from top */
+		    }
+
+		    h1 {
+		        color: #ffffff;
+		        margin-bottom: 25px;
+		    }
+
+		    .calculator {
+		        background: #ffffff;
+		        padding: 25px;
+		        width: 320px;
+		        border-radius: 15px;
+		        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+		    }
+
+		    label {
+		        display: block;
+		        margin-top: 10px;
+		        font-weight: 600;
+		    }
+
+		    input[type="number"] {
+		        width: 100%;
+		        padding: 10px;
+		        margin-top: 5px;
+		        border-radius: 8px;
+		        border: 1px solid #ccc;
+		        font-size: 16px;
+		    }
+
+		    input[type="number"]:focus {
+		        outline: none;
+		        border-color: #667eea;
+		        box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+		    }
+
+		    .buttons {
+		        display: grid;
+		        grid-template-columns: repeat(2, 1fr);
+		        gap: 10px;
+		        margin-top: 20px;
+		    }
+
+		    button {
+		        padding: 12px;
+		        font-size: 16px;
+		        border-radius: 8px;
+		        border: none;
+		        cursor: pointer;
+		        background: #667eea;
+		        color: white;
+		        font-weight: 600;
+		        transition: 0.3s;
+		    }
+
+		    button:hover {
+		        background: #5a67d8;
+		        transform: translateY(-2px);
+		    }
+		
+
+    </style>
+</head>
+<body>
+
+<h1>Simple Calculator</h1>
+
+<div class="calculator">
+    <form action="/calculate" method="post">
+        <label>Enter Number 1:</label>
+        <input type="number" name="num1" required>
+
+        <label>Enter Number 2:</label>
+        <input type="number" name="num2" required>
+
+        <div class="buttons">
+            <button type="submit" name="operation" value="add">Add</button>
+            <button type="submit" name="operation" value="sub">Subtract</button>
+            <button type="submit" name="operation" value="mul">Multiply</button>
+            <button type="submit" name="operation" value="div">Divide</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
